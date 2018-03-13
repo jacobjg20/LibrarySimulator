@@ -1,14 +1,16 @@
-/*function book(name){
-  var title;
-  var Available = true;
-  var publicationDate = new Date();
-  var checkOutDate = new Date();
-  var callNumber;
-  var author = new author();
+function author(firstName, lastName){
+  this.firstName = firstName;
+  this.lastName = lastName;
 }
-*/
-function book(name){
-  this.title = new Date();
+
+function book(title , publicationDate , callNumber, author){
+  this.title = title;
+  this.available = true;
+  this.publicationDate = new Date(publicationDate);
+  this.checkOutDate = new Date();
+  this.callNumber = callNumber;
+  this.authors = [];
+
+  //Pushes authors into authors array
+  this.authors.push(author);
 }
-var me = new book("jacob");
-console.log(me.title);
