@@ -10,11 +10,15 @@
 	</body>
 	<script src="library.js"></script>
 	<script>
-		var book1 = new book("TunderCats", "04/21/1998", 83921, new author("tony", "Robbins"));
-		console.log(book1.title);
-		console.log(book1.publicationDate);
-		console.log(book1.callNumber);
-		book1.checkOut(new Date());
-		console.log(book1.checkOutDate);
+		var books = [
+			 new book("Clean Code", "08/15/2008", 978013, new author("Robert", "Martin")),
+			 new book("A Wrinkle in Time", "05/01/2007", 102341, new author("Madeleine", " L'Engle")),
+			 new book("The Power of Habit", "	01/07/2014", 981605, new author("Charles", "Duhigg")),
+			 new book("Outliers", "06/07/2011", 78031601, new author("Malcolm", "Gladwell")),
+			 new book("TunderCats", "04/21/1998", 83921, new author("tony", "Robbins")),
+		 ];
+
+		
+
 	</script>
 </html>
